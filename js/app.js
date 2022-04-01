@@ -1,5 +1,5 @@
 import { user, errors1, errors2 } from './modules/data.js';
-import { checkErrors } from './modules/helper.js';
+import { checkErrors, checkErrors2 } from './modules/helper.js';
 import PersonEs5 from './modules/PersonEs5.js';
 import PersonEs6 from './modules/PersonEs6.js';
 
@@ -53,7 +53,7 @@ const obEntries = Object.entries(user);
 
 // console.log(obEntries[1][1]);
 
-const err1Result = checkErrors(errors1);
+const err1Result = checkErrors2(errors1);
 console.log('err1Result ===', err1Result);
-const err2Result = checkErrors(errors2);
+const err2Result = checkErrors2(errors2);
 console.log('err2Result ===', err2Result);
