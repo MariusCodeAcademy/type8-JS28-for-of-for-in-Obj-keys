@@ -1,4 +1,5 @@
-import { user } from './modules/data.js';
+import { user, errors1, errors2 } from './modules/data.js';
+import { checkErrors } from './modules/helper.js';
 console.log('app');
 
 // iskonsolinti user objekta app.js
@@ -31,13 +32,18 @@ for (let key in user) {
 
 // Object.keys({}) - grazina objekto keys masyvo pavidalu
 const obKeys = Object.keys(user);
-console.log('obKeys ===', obKeys);
+// console.log('obKeys ===', obKeys);
 // Object.values({}) - grazina objekto values masyvo pavidalu
 const obValues = Object.values(user);
-console.log('obValues ===', obValues);
+// console.log('obValues ===', obValues);
 // Object.entries({}) - grazina objekto keys ir values masyvo masyve pavidalu
 const obEntries = Object.entries(user);
-console.log('obEntries ===', obEntries);
+// console.log('obEntries ===', obEntries);
 // is obEntries gauti metus
 
-console.log(obEntries[1][1]);
+// console.log(obEntries[1][1]);
+
+const err1Result = checkErrors(errors1);
+console.log('err1Result ===', err1Result);
+const err2Result = checkErrors(errors2);
+console.log('err2Result ===', err2Result);
