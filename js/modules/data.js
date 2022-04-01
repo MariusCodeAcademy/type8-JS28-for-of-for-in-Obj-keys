@@ -3,6 +3,7 @@ export const user = {
   age: 25,
   hasCar: true,
 };
+user.town = 'Vilnius';
 const key = 'name';
 console.log('user[key]  ===', user[key]);
 
@@ -44,3 +45,10 @@ const newUserObj1 = {
 // isInputOk(''); //  'cant be blank'
 // isInputOk('ab'); //  'must be longer then 3'
 // isInputOk('123456'); //  'cant be longer then 6'
+
+const cardData = {
+  title: 'Js',
+  author: 'Mike',
+  body: 'Was created in a week or so',
+  date: 2020,
+};
