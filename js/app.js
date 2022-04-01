@@ -9,17 +9,35 @@ console.log('user ===', user);
 // atspausdinti visus user keys
 
 for (let key in user) {
-  console.log('key ===', key);
+  // console.log('key ===', key);
 }
 const keysArr = [];
 for (let key in user) {
   keysArr.push(key);
 }
-console.log('keysArr ===', keysArr);
+// console.log('keysArr ===', keysArr);
 
 // atspaustindi visas user objekto reiksmes
 for (let key in user) {
-  console.log(user[key]);
+  // console.log(user[key]);
 }
 
 // sudeti i masyva visas user reiksmes
+const valuesArr = [];
+for (let key in user) {
+  valuesArr.push(user[key]);
+}
+// console.log('valuesArr ===', valuesArr);
+
+// Object.keys({}) - grazina objekto keys masyvo pavidalu
+const obKeys = Object.keys(user);
+console.log('obKeys ===', obKeys);
+// Object.values({}) - grazina objekto values masyvo pavidalu
+const obValues = Object.values(user);
+console.log('obValues ===', obValues);
+// Object.entries({}) - grazina objekto keys ir values masyvo masyve pavidalu
+const obEntries = Object.entries(user);
+console.log('obEntries ===', obEntries);
+// is obEntries gauti metus
+
+console.log(obEntries[1][1]);
