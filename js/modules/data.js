@@ -36,3 +36,11 @@ const newUserObj1 = {
   gender: 'male',
   country: 'Lithuania',
 };
+
+// helper.js parasyti funkcija isInputOk() kuri priima stringa ir tikrina
+// jei stringas tuscias grazina 'cant be blank'
+// jei stringas trumpesnis nei 3 simboliai grazina 'must be longer then 3'
+// jei stringas ilgesnis nei 5 simboliai grazina 'cant be longer then 6'
+isInputOk(''); //  'cant be blank'
+isInputOk('ab'); //  'must be longer then 3'
+isInputOk('123456'); //  'cant be longer then 6'
