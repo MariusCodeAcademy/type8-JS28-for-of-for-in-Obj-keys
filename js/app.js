@@ -1,5 +1,15 @@
 import { user, errors1, errors2 } from './modules/data.js';
 import { checkErrors } from './modules/helper.js';
+import PersonEs5 from './modules/PersonEs5.js';
+import PersonEs6 from './modules/PersonEs6.js';
+
+const per1 = new PersonEs6('Mike', 26);
+console.log('per1 ===', per1);
+per1.sayHi();
+const per2 = new PersonEs5('James', 36);
+console.log('per2 ===', per2);
+per2.sayHi();
+
 console.log('app');
 
 // iskonsolinti user objekta app.js
